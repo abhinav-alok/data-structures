@@ -16,23 +16,39 @@
 
 // Solution:
 
-function reverseArray(A){
-    let i=0;
-    let j=A.length-1;
-    while(i<j){
-        let temp =A[i];
-        A[i] = A[j];
-        A[j] = temp;
-        i++;
-        j--;
-    }
-    return A
+function reverseArray(A, B){
+    B = B%A.length
+        let i=0, j=A.length-1;
+        while(i<j){
+            let temp = A[i];
+            A[i] = A[j];
+            A[j] = temp;
+            i++;
+            j--;
+        }
+        let x = 0, y = B-1;
+        while(x<y){
+            let temp = A[x];
+            A[x] = A[y];
+            A[y] = temp;
+            x++;
+            y--;
+        }
+        let a = B, b = A.length-1;
+        while(a<b){
+            let temp = A[a];
+            A[a] = A[b];
+            A[b] = temp;
+            a++;
+            b--;
+        }
+        return A  
 }
 
 // Please uncomment the function call for which you want to execute the code.
 
 // Function Call 1:
-console.log(reverseArray([1,2,3,2,1]))
+console.log(reverseArray([1, 2, 3, 4], 2))
 
 // Function Call 2:
-// reverseArray([1,1,10])
+// reverseArray([2, 5, 6], 1)
