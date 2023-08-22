@@ -20,7 +20,7 @@
 
 // Solution:
 
-function rangeReverse(A, B){
+function rangeReverse(A, B, C){
     while(B < C) {
         let temp = A[B];
         A[B] = A[C];
@@ -34,7 +34,7 @@ function rangeReverse(A, B){
 // Please uncomment the function call for which you want to execute the code.
 
 // Function Call 1:
-console.log(rangeReverse([1,2,3,4], 7))
+console.log(rangeReverse([1, 2, 3, 4], 2, 3))
 
 // Function Call 2:
-// rangeReverse([1,2,4], 4)
+// rangeReverse([2, 5, 6], 0, 2)
