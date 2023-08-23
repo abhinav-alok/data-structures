@@ -1,6 +1,10 @@
 # data-structures
-A repo to log my daily problems. 
-Currently, I am using JavaScript and TypeScript, will be adding solutions in Rust soon (hopefully :)).
+Welcome to my GitHub repository!
 
+In this repository, I'm keeping track of the challenges I face every day. Right now, I'm using JavaScript and TypeScript to work on these challenges. I'm planning to include solutions using Rust too, although I'm still working on that (hopefully, I'll get there soon!).
 
-Heavily inspired by https://github.com/TheAlgorithms
+This project is strongly influenced by the ideas and inspiration I've gathered from the wonderful work done at https://github.com/TheAlgorithms. It's a way for me to learn, grow, and share my problem-solving journey.
+
+Thanks for stopping by and being a part of my coding adventure! 
+
+Cheers!!! :)
