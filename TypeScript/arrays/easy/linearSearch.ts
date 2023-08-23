@@ -1,24 +1,24 @@
 /**
-*   Given an array A and an integer B, find the number of occurrences of B in A.
+*   Given an array array and an integer num, find the number of occurrences of num in array.
 
     Problem Constraints:
-            1 <= B, Ai <= 109
-            1 <= length(A) <= 105
+            1 <= num, Ai <= 109
+            1 <= length(array) <= 105
 
     Input Format
-            Given an integer array A and an integer B.
+            Given an integer array array and an integer num.
 
     Output Format
-            Return an integer, number of occurrences of B in A.
+            Return an integer, number of occurrences of num in array.
 
 */
 
 // Solution:
 
-function linearSearchInList(A: number[], B: number): number{
+function linearSearchInList(array: number[], num: number): number{
     let count = 0;
-    for(let i=0; i<=A.length-1; i++){
-        if(A[i] == B){
+    for(let i=0; i<=array.length-1; i++){
+        if(array[i] == num){
             count++
         }
     }
