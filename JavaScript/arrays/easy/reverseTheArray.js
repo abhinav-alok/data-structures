@@ -1,13 +1,13 @@
 /**
-*  You are given a constant array A.
+*  You are given a constant array array.
     You are required to return another array which is the reversed form of the input array..
 
     Problem Constraints:
-            1 <= A.size() <= 10000
-            1 <= A[i] <= 10000
+            1 <= array.size() <= 10000
+            1 <= array[i] <= 10000
 
     Input Format
-            First argument is a constant array A.
+            First argument is a constant array array.
 
     Output Format
             Return an integer array.
@@ -16,17 +16,17 @@
 
 // Solution:
 
-function reverseArray(A){
+function reverseArray(array){
     let i=0;
-    let j=A.length-1;
+    let j=array.length-1;
     while(i<j){
-        let temp =A[i];
-        A[i] = A[j];
-        A[j] = temp;
+        let temp =array[i];
+        array[i] = array[j];
+        array[j] = temp;
         i++;
         j--;
     }
-    return A
+    return array
 }
 
 // Please uncomment the function call for which you want to execute the code.

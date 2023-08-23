@@ -1,50 +1,50 @@
 /**
-*  Given an integer array A of size N and an integer B, you have to return the same array 
-   after rotating it B times towards the right.
+*  Given an integer array array of size N and an integer num, you have to return the same array 
+   after rotating it num times towards the right.
 
     Problem Constraints:
             1 <= N <= 105
-            1 <= A[i] <=109
-            1 <= B <= 10
+            1 <= array[i] <=109
+            1 <= num <= 10
 
     Input Format
-            The first argument given is the integer array A.
-            The second argument given is the integer B.
+            The first argument given is the integer array array.
+            The second argument given is the integer num.
 
     Output Format
-            Return the array A after rotating it B times to the right
+            Return the array array after rotating it num times to the right
 
 */
 
 // Solution:
 
-function rotateTheArray(A, B){
-    B = B%A.length
-        let i=0, j=A.length-1;
+function rotateTheArray(array, num){
+    num = num%array.length
+        let i=0, j=array.length-1;
         while(i<j){
-            let temp = A[i];
-            A[i] = A[j];
-            A[j] = temp;
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
             i++;
             j--;
         }
-        let x = 0, y = B-1;
+        let x = 0, y = num-1;
         while(x<y){
-            let temp = A[x];
-            A[x] = A[y];
-            A[y] = temp;
+            let temp = array[x];
+            array[x] = array[y];
+            array[y] = temp;
             x++;
             y--;
         }
-        let a = B, b = A.length-1;
+        let a = num, b = array.length-1;
         while(a<b){
-            let temp = A[a];
-            A[a] = A[b];
-            A[b] = temp;
+            let temp = array[a];
+            array[a] = array[b];
+            array[b] = temp;
             a++;
             b--;
         }
-        return A  
+        return array  
 }
 
 // Please uncomment the function call for which you want to execute the code.

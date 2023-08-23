@@ -1,17 +1,17 @@
 /**
  *  Problem Description:
-            Given an array A and an integer B. A pair(i, j) 
-            in the array is a good pair if i != j and (A[i] + A[j] == B). 
+            Given an array array and an integer num. array pair(i, j) 
+            in the array is a good pair if i != j and (array[i] + array[j] == num). 
             Check if any good pair exist or not.
 
     Problem Constraints:
-            1 <= A.size() <= 104
-            1 <= A[i] <= 109
-            1 <= B <= 109
+            1 <= array.size() <= 104
+            1 <= array[i] <= 109
+            1 <= num <= 109
 
     Input Format
-            First argument is an integer array A.
-            Second argument is an integer B.
+            First argument is an integer array array.
+            Second argument is an integer num.
 
     Output Format
             Return 1 if good pair exist otherwise return 0.
@@ -20,10 +20,10 @@
 
 // Solution:
 
-function goodPair(A, B){
-    for(let i=0; i<=A.length-1; i++){
-        for(let j=i+1; j<=A.length-1; j++){
-            if(A[i] + A[j] === B){
+function goodPair(array, num){
+    for(let i=0; i<=array.length-1; i++){
+        for(let j=i+1; j<=array.length-1; j++){
+            if(array[i] + array[j] === num){
                 return 1
             }
         }

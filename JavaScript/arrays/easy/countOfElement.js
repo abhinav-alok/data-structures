@@ -1,14 +1,14 @@
 /**
  *  Problem Description:   
- *          Given an array A of N integers. 
+ *          Given an array array of N integers. 
             Count the number of elements that have at least 1 elements greater than itself.
 
     Problem Constraints:
             1 <= N <= 105
-            1 <= A[i] <= 109
+            1 <= array[i] <= 109
 
     Input Format:
-            First and only argument is an array of integers A.
+            First and only argument is an array of integers array.
 
     Output Format:
             Return the count of elements.
@@ -17,20 +17,20 @@
 
 // Solution:
 
-function countOfElement(A){
+function countOfElement(array){
     let maxElement = 0
-    for(let i=0; i<=A.length-1; i++){
-        if(A[i]> maxElement){
-            maxElement = A[i]
+    for(let i=0; i<=array.length-1; i++){
+        if(array[i]> maxElement){
+            maxElement = array[i]
         }
     }
     let countOfMaxElement = 0;
-    for(let i=0; i<=A.length-1; i++){
-        if(A[i] === maxElement){
+    for(let i=0; i<=array.length-1; i++){
+        if(array[i] === maxElement){
             countOfMaxElement ++
         }
     }
-    let ans = A.length - countOfMaxElement;
+    let ans = array.length - countOfMaxElement;
     return ans
 }
 
