@@ -1,9 +1,25 @@
+/**
+*  Problem Description:
+        Write a function to find the longest common prefix string amongst an array of strings.
+        If there is no common prefix, return an empty string "".
+
+    Problem Constraints:
+        1 <= array.length <= 200
+        0 <= array[i].length <= 200
+
+
+    Input Format
+        Input: array = ["flower","flow","flight"]
+
+    Output Format
+        Output: "fl"
+*/
+
+
 function longestCommonPrefix(array){
-    // Edge Case 1
     if(array.length === 1){
         return array[0]
     }
-     // Edge Case 2
     if(!array.length){
         return ""
     }
